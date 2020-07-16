@@ -1,0 +1,158 @@
+/*pre-defined classes for centering texts*/
+.center {
+    text-align: center;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* --------------------------------------------- */
+
+/* the header section contains image and title */
+.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+
+/* .logo-image size that control image size */
+.logo-image {
+    width: 120px;
+    height: 120px;
+}
+
+
+/* reset margin of name */
+.my-title {
+    margin: 0;
+}
+
+
+/* style for name & title */
+.my-name,
+.my-title {
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: right;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* line break between header and backgound-image */
+.line-break {
+    height: 5px;
+    background-color: #2d3c49;
+    margin: 30px 0;
+}
+
+
+/* Image  credit from this website 
+    https://www.pexels.com/photo/black-and-white-design-text-wall-241832/
+*/
+.image-background {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+}
+
+
+.img-background{
+    height: 25%;
+    width: 100%;
+}
+
+/*feature work head style in the feature-work section*/
+.featured-work-header {
+    color: #7d97ad;
+    text-transform: capitalize;
+}
+
+
+/* featured section */
+.featured {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+
+/* featured boxes */
+.feature-item {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+    width: 200px;
+    margin: .5vw;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 5px 5px;
+    box-shadow: 0 0 5px 5px #ddd;
+}
+
+
+/* items images */
+.item-img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+
+/* feature-item heading */
+.feature-item h3 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+
+.feature-item {
+    word-break: break-word;
+}
+
+
+/* feature-item paragraph */
+
+
+/* Phone */
+@media screen and (max-width:320px) {
+
+
+    /* control logo-image size in header section */
+    .logo-image {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    /* control name & title font size in header section */
+    #my-name,
+    #my-title {
+        font-size: 15px;
+    }
+
+
+    /* control image-background size in header section */
+    .image-background {
+        height: 200px;
+    }
+}
+
+
+/* Desktop */
+@media screen and (min-width:992px) {
+
+    /* center the page content */
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
